@@ -47,5 +47,11 @@ public class FlightRepositoryImpl implements FlightRepository {
 		return true;
 	}
 
+	@Override
+	public List<Flight> findByCarrier(String carrier) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
 
