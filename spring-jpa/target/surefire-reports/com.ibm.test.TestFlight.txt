@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: com.ibm.test.TestFlight
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 1.464 s <<< FAILURE! - in com.ibm.test.TestFlight
+testSave  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'emf' defined in class path resource [appctx.xml]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: No persistence unit with name 'SpringJpa' found
+Caused by: java.lang.IllegalArgumentException: No persistence unit with name 'SpringJpa' found
+
+testAllFlights  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'emf' defined in class path resource [appctx.xml]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: No persistence unit with name 'SpringJpa' found
+Caused by: java.lang.IllegalArgumentException: No persistence unit with name 'SpringJpa' found
+
+saveAll  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'emf' defined in class path resource [appctx.xml]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: No persistence unit with name 'SpringJpa' found
+Caused by: java.lang.IllegalArgumentException: No persistence unit with name 'SpringJpa' found
+
